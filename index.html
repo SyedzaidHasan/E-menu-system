@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <header class="container sticky">
+        <div class="logo">
+            <h2>E-Menu<span style="color: rgb(184, 20, 20);">System</span></h2>
+        </div>
+
+        <div class="sidebody">
+            <div class="searchBar">
+                <input placeholder="Search Items..." id="searchBar" name="searchBar" type="text">
+                <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+            </div>
+        </div>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i><p id="count">0</p>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="main">
+            <div class="menu-nav">
+                <ul class="menu-navigation flex">
+                    <li><a href="#starter" class="active">Starter</a></li>
+                    <li><a href="#maincourse">Main Course</a></li>
+                    <li><a href="#bread">Bread</a></li>
+                    <li><a href="#rice">Rice</a></li>
+                    <li><a href="#dessert">Dessert</a></li>
+                </ul>
+            </div>
+            <div id="root">
+
+            </div>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-scroll">
+                <div class="head">
+                    <p>Your Items</p>
+                </div>
+                <div id="cartItem">Your item list is Empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h3 id="total">Rs. 0.00</h3>
+                </div>
+            </div>
+
+            <div id="lower-sidebar">
+
+            </div>
+
+            
+            <!-- <div class="continue-button">
+                <h3 id="total" class="total">Rs. 0.00</h3>
+                <a href="/Payment Gateway/card.html" class="continue">Continue</a>
+            </div> -->
+        </div>
+    </div>
+
+    
+
+    <script src="menu.js"></script>
+
+</body>
+</html>

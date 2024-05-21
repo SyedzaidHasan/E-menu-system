@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+/* Head Section */
+
+header{
+    height: 60px;
+    width: 80%;
+    background-color: #e3e2e2;
+    border-radius: 8px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+
+/* .searchBar {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+
+input[type="text"]{
+    position: relative;
+    width: 300px;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #b71c1c;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    
+
+}
+
+
+.glass{
+    position: relative;
+    left: -5px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 11px 20px 10px;
+    font-size: 1rem;
+    width: 60px;
+    cursor: pointer;
+    
+    background-color: #b71c1c;
+    color: white;
+    
+}
+
+
+.glass:hover{
+    background-color: #6b1010;
+
+}
+
+.cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b71c1c;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+
+.fa-solid{
+    color: white;
+}
+
+.cart p{
+    width: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    color: #b71c1c;
+}
+
+/* Body */
+
+
+.container{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    margin-bottom: 10px;
+    
+    
+}
+
+.sticky{
+    position: sticky;
+    top: 15px;
+    z-index: 100;
+}
+
+.main{
+    overflow: auto;
+    width: 70%;
+    height: 85vh;
+}
+
+.menu-nav{
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(184, 20, 20);
+    padding: 8px;
+    border-radius: 10px 10px 0px 0px;
+}
+.menu-navigation{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+div ul li a{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px 6px 0px 0px;
+    padding: 7px 2rem 0.85rem 2rem;
+    transition: 0.2s ease-out;
+}
+
+div ul li a:hover,
+div ul li a.active{
+    color: rgb(184, 20, 20);
+    background-color: white;
+    
+}
+
+#root{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 25px;
+    padding-inline: 40px;
+
+}
+
+.sidebar{
+    width: 30%;
+    border-radius: 8px;
+    background-color: #e3e2e2;
+    text-align: center;
+    padding: 10px;
+    max-height: 85vh;
+    
+ 
+}
+
+.sidebar-scroll{
+    overflow: auto;
+    height: 90%;
+}
+
+.head{
+    background-color: #b71c1c;
+    border-radius: 4px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 10px;
+    border-top: 2px solid #000000;
+    
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e3e2e2;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 10px 10px grey;
+}
+.box:hover{
+    box-shadow: 0px 10px 20px rgb(47, 47, 47);
+}
+.img-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.images{
+    width: 100%;
+    /* max-height: 90%; */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.bottom{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+}
+
+h2{
+    font-size: 17px;
+    color: #000;
+    padding-bottom: 5px;
+    margin-block: 4px;
+}
+
+button{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #b71c1c;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    
+}
+
+button:hover{
+    background-color: #4a4a4a;
+}
+.bottom p{
+    font-weight: 600;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 5px;
+}
+
+.cart-item p{
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+}
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #e3e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+
+.fa-trash{
+    color: #b71c1c;
+    margin-right: 5px;
+}
+.fa-trash:hover{
+    cursor: pointer;
+    color: #333;
+}
+
+.continue{
+    background-color: #b71c1c;
+    width: 100px;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    opacity: .8;
+    outline: 1px solid #b71c1c;
+    border-radius: 4px;
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.2s ease-in;
+}
+
+.total{
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #b71c1c;
+    position: sticky;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+    border: 2px solid #b71c1c;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.continue-button{
+    padding-top: 10px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 25px;
+    margin-top: 10px;
+}
+
+.continue:hover{
+    cursor: pointer;
+    opacity: 1;
+    outline-offset: 2px;
+    background-color: #6b1010;
+
+}
